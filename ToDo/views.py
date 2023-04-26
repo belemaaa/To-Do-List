@@ -107,6 +107,6 @@ class TaskUpdate(LoginRequiredMixin, UpdateView):
 
 #task delete view
 class DeleteView(LoginRequiredMixin, DeleteView):
-    model = Task
+    model = Task #Task model 
     context_object_name = 'task'
     success_url = reverse_lazy('tasks')
